@@ -18,10 +18,10 @@
 		  -ms-text-size-adjust:100%;
 		  -webkit-text-size-adjust:100%;
 		}
-        body {
-            margin: 0;
+        	body {
+            		margin: 0;
 			padding: 10px;
-        }
+       		 }
 		.switch-wrapper{
 		  display:flex;
 		  align-items:center;
@@ -82,17 +82,17 @@
 		  color:#2196f3;
 		}
       
-        .disabled_overlay {
-            position: fixed;
+        	.disabled_overlay {
+            		position: fixed;
 			background-color: #777;
-            z-index: 10;
-            cursor: not-allowed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.1;
-        }
+           		z-index: 10;
+            		cursor: not-allowed;
+            		top: 0;
+            		left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0.1;
+        	}
     </style>
 </head>
 <body>
@@ -118,21 +118,19 @@
         }
       
         function setup(value,checked,label) {
-			if (!value && checked) {
-				$("#switchId").prop("checked", true);
-				CustomElement.setValue("true"); 
-			}
-			else {
-				$("#switchId").prop("checked", (value=="true"));
-				console.log("loaded value "+$("#switchId").prop("checked"));
-			}
-			
-			$("#switchLabel").text(label);
-			
-			$("#switchId").change(function() {			 
-				console.log("stored value "+$(this).is(":checked").toString());
-				CustomElement.setValue($(this).is(":checked").toString());   
-			});
+		if (!value && checked) {
+			$("#switchId").prop("checked", true);
+			CustomElement.setValue("true"); 
+		}
+		else {
+			$("#switchId").prop("checked", (value=="true"));
+		}
+
+		$("#switchLabel").text(label);
+
+		$("#switchId").change(function() {			 
+			CustomElement.setValue($(this).is(":checked").toString());   
+		});
         }
       
         function updateSize() {
