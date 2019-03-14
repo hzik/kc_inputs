@@ -1,6 +1,6 @@
 # kc_inputs
 
-This KC custome element is jsut a simple switch -> on/off
+This KC custom element is jsut a simple switch -> on/off
 
 You can test it by configuring https://amend.cz/inputs/switch.html url for your custom element.
 
