@@ -30,4 +30,3 @@ You can specify the Parameters {JSON} part of the configuration to configure the
     "label": "Accepted"
 }
 ```
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/kontent-custom-element-samples/Switch?pixel)
