@@ -2,9 +2,7 @@
 
 This KC custom element is just a simple switch -> on/off
 
-You can test it by configuring https://amend.cz/inputs/switch.html url for your custom element.
-
-![screenshot](https://amend.cz/inputs/switch.png)
+You can test it by configuring [https://amend.cz/inputs/switch.html](https://kontentapp.azurewebsites.net/elements/switch.html) url for your custom element.
 
 ## Configuration
 
